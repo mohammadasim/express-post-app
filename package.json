@@ -1,0 +1,31 @@
+{
+  "name": "express-post-app",
+  "version": "1.0.0",
+  "description": "A simple express app to understand post requests.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadasim/express-post-app.git"
+  },
+  "keywords": [
+    "javascript",
+    "express",
+    "post",
+    "ejs"
+  ],
+  "author": "Mohammad Ayub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammadasim/express-post-app/issues"
+  },
+  "homepage": "https://github.com/mohammadasim/express-post-app#readme",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "faker": "^4.1.0"
+  }
+}

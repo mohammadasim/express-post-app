@@ -1,0 +1,28 @@
+<% include partials/header.ejs %>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Street Address</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% friendList.forEach(function(friends){ %>
+            <tr>
+                <td><%= friends.firstName; %></td>
+                <td><%= friends.lastName; %></td>
+                <td><%= friends.streetAddress; %></td>
+                <td><%= friends.city; %></td>
+                <td><%= friends.state; %></td>
+                <td>USA</td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+<% include partials/footer.ejs %>

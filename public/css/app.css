@@ -1,0 +1,21 @@
+.jumbotron{
+    background-image: url(/pics/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+}
+.display-4{
+    font-weight: 400;
+}
+.lead{
+    font-weight: 400;
+}
+#lead{
+    text-emphasis: bold;
+}
+#footer{
+    padding-top: 60px;
+}
+.container{
+    margin-top: 50px;
+}
