@@ -1,0 +1,31 @@
+<% include partials/header.ejs %>
+<form class="form-inline" action="/searchmovie" method="POST">
+    <label class="sr-only" for="title">Movie Search</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" name="title" placeholder="Movie Title">
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Year</th>
+            <th scope="col">imdbID</th>
+            <th scope="col">Type</th>
+            <th scope="col">Poster</th>
+        </tr>
+    </thead>
+    <tbody>
+<% movieList.forEach(function(moviesList){ %>
+    <tr>
+        <td><%= moviesList.title; %></td>
+        <td><%= moviesList.year; %></td>
+        <td><%= moviesList.imdbID; %></td>
+        <td><%= moviesList.type; %></td>
+        <td><img src="<%=moviesList.poster%>" alt="Movie Poster"/></td>
+    </tr>
+
+<% }); %>
+</tbody>
+</table>
+<% include partials/footer.ejs %>

@@ -27,6 +27,10 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "faker": "^4.1.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "locus": "^2.0.1"
   }
 }
