@@ -14,17 +14,29 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-        <a class="navbar-brand" href="/"><i class="fas fa-binoculars"></i> Express</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="/friends">List Friends</a>
-                <a class="nav-item nav-link" href="/addfriend">Add Friend</a>
+    <div class="container">
+        <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="/"><i class="fas fa-binoculars"></i> Media Insights</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/friends">List Friends</a>
+                    <a class="nav-item nav-link" href="/addfriend">Add Friend</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '321584245449004',
+                    autoLogAppEvents: true,
+                    xfbml: true,
+                    version: 'v4.0'
+                });
+            };
+        </script>

@@ -2,6 +2,9 @@
     background-image: url(/pics/background.jpg);
     background-size: cover;
     background-position: center;
+    color: white;
+    margin-top: 15px;
+    padding: 0.5px 0.5px 0.5px 0.5px;
 }
 }
 .display-4{
@@ -17,5 +20,5 @@
     padding-top: 60px;
 }
 .container{
-    margin-top: 50px;
+    margin-top: 5px;
 }

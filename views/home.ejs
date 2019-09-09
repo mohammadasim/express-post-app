@@ -1,13 +1,19 @@
 <% include partials/header.ejs %>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=321584245449004&autoLogAppEvents=1">
+</script>
 <!-- Jumbotran start -->
 <div>
     <div class="jumbotron text-center">
-        <h1 class="display-3">Pattern</h1>
+        <h1 class="display-3">Media Insights</h1>
         <h2 class="lead">It uses utility classes for typography and spacing to space content out within the larger
             container.</h2>
         <a class="btn btn-primary btn-lg" href="/addfriend" role="button">Add Friend</a>
         <a class="btn btn-success btn-lg" href="/friends" role="button">View Friends</a>
         </p>
+        <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with"
+            data-auto-logout-link="false" data-use-continue-as="true"></div>
     </div>
 </div>
 <!-- Jumbotran end -->

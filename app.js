@@ -1,7 +1,8 @@
 var express = require("express");
-var app = express();
+var request = require("request");
 var fake = require("faker");
 var bodyParser = require("body-parser");
+var app = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
     extended: true
