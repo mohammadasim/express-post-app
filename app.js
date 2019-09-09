@@ -57,7 +57,6 @@ app.post("/searchmovie", (req, res) => {
     rp(options)
     .then((result) =>{
         var parsedData = JSON.parse(result);
-        console.log(parsedData.Search);
         parsedData.Search.forEach(function(searchResult){
             var movie = {
                 title: searchResult.Title,
@@ -68,7 +67,6 @@ app.post("/searchmovie", (req, res) => {
             }
             movieList.push(movie);
         });
-        console.log(movieList.length);
     })
     .catch((err) =>{
         console.log('Error: ', err);
